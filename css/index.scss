@@ -1195,6 +1195,20 @@ margin-top: 20px;
         z-index: 2;
         top: 0;
         font-family: 'microsoft yahei',arial;
+        a{
+            display: block;
+            line-height: 200px;
+            width: 40px;
+            height: 38px;
+            text-decoration: none;
+            color: #d8d8d8;
+            background-color: #444851;
+            position: relative;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
         .topRightSidebar{
             position: absolute;
             top: 50%;
@@ -1202,28 +1216,212 @@ margin-top: 20px;
             left: 0;
             background: #444851;
             z-index: 2;
-            .topFirstGird, .topTwoGird,.topThreeGird,.topFourGird，.topFiveGird{
+            .topFirstGird, .topTwoGird,.topThreeGird,.topFourGird,.topFiveGird{
                 position: relative;
                 display: block;
                 height: 38px;
                 z-index: 1; 
             }
+            .topFirstGird a{
+                
+                span{
+                    width: 18px;
+                    height: 19px;
+                    top: 10px;
+                    left: 11px;
+                    position: absolute;
+                    cursor: pointer;
+                    background: url(../img/ibar_sprites.png) no-repeat;
+                }
+            }
             .topTwoGird{
                 padding: 20px 0 10px;
                 height: 133px;
                 left: 0;
+                #TwoGirda{
+                    line-height: 16px;
+                    height: 133px;
+                    color: #fff;
+                    background: url(../img/ibar_sprites.png) no-repeat;
+                    background-position: -23px -225px;               
+                    span{
+                        width: 23px;
+                        height: 18px;
+                        top: 11px;
+                        left: 9px;
+                        position: absolute;
+                        cursor: pointer;
+                        background: url(../img/ibar_sprites.png) no-repeat;
+                        background-position: 0 -29px;     
+                    }
+                    .text1{
+                            width: 16px;
+                            height: 48px;
+                            margin: 38px 0 0 14px;
+                            cursor: pointer;
+                    }
+                    .text2{
+                        width: 23px;
+                        height: 23px;
+                        display: block;
+                        border-radius: 50%;
+                        background: #ed145b;
+                        text-align: center;
+                        line-height: 23px;
+                        margin: 9px 0 0 10px;
+                        cursor: pointer;
+                        color: #fff;
+                    }
+                }
+                
+            }
+            .topFirstGird:hover a,.topTwoGird:hover #TwoGirda,.topThreeGird:hover a,.topFourGird:hover a,.topFiveGird:hover a{
+                    background: #ed145b;
+                    z-index: 10;
+            }
+             .topFirstGird:hover a span{
+                    background: url(../img/ibar_sprites.png) no-repeat;
+                    background-position: -33px 0;
+            }
+            .topTwoGird:hover #TwoGirda span{
+                    background: url(../img/ibar_sprites.png) no-repeat;
+                    background-position: -33px -29px;
+            }
+            .topThreeGird:hover a span{
+                    background: url(../img/ibar_sprites.png) no-repeat;
+                    background-position: -33px -57px;
+            }
+            .topFourGird:hover a span{
+                    background: url(../img/ibar_sprites.png) no-repeat;
+                    background-position: -33px -85px;
+            }
+            .topFiveGird:hover a span{
+                    background: url(../img/ibar_sprites.png) no-repeat;
+                    background-position: -37px -110px;
             }
             .topThreeGird{
                 padding-bottom: 6px;
+                a{
+                    span{
+                        width: 18px;
+                        height: 18px;
+                        top: 10px;
+                        background: url(../img/ibar_sprites.png) no-repeat;
+                        background-position: 0 -57px;
+                        left: 11px;
+                        position: absolute;
+                        cursor: pointer;
+                    }
+                }
+                .threeDiv{
+                    height: 38px;
+                    line-height: 38px;
+                    width: 92px;
+                    position: absolute;
+                    z-index: 2;
+                    left: -92px;
+                    top: 0;
+                    background: #444851;
+                    color: #d8d8d8;
+                    text-align: center;
+                    display: block;
+//                  visibility: hidden;
+                    span{
+                        position: absolute;
+                        right: -5px;
+                        top: 15px;
+                        width: 5px;
+                        height: 9px;
+                        overflow: hidden;
+                        cursor: pointer;
+                        background: url(../img/ibar_sprites.png) no-repeat;
+                        background-position: 0 -234px;
+                        
+                    }
+                }
                 
             }
             .topFourGird{
                 padding-bottom: 6px;
+                a{
+                    span{
+                        width: 18px;
+                        position: absolute;
+                        height: 15px;
+                        top: 11px;
+                        left: 11px;
+                        cursor: pointer;
+                        background: url(../img/ibar_sprites.png) no-repeat;
+                        background-position: 0 -85px;                       
+                    }
+                }
+                .fourDiv{
+                    height: 38px;
+                    line-height: 38px;
+                    width: 92px;
+                    position: absolute;
+                    z-index: 2;
+                    left: -92px;
+                    top: 0;
+                    background: #444851;
+                    color: #d8d8d8;
+                    text-align: center;
+                    display: block;
+//                  visibility: hidden;
+
+                    span{
+                        position: absolute;
+                        right: -5px;
+                        top: 15px;
+                        width: 5px;
+                        height: 9px;
+                        overflow: hidden;
+                        cursor: pointer;
+                        background: url(../img/ibar_sprites.png) no-repeat;
+                        background-position: 0 -234px;                       
+                    }
+                }
                 
             }
             .topFiveGird{
                padding-bottom: 6px;
-                
+                a{
+                    span{
+                        width: 11px;
+                        height: 24px;
+                        top: 8px;
+                        left: 14px;
+                        cursor: pointer;
+                        position: absolute;
+                        background: url(../img/ibar_sprites.png) no-repeat;
+                        background-position: -4px -110px;                        
+                    }
+                }
+                .fiveDiv{
+                    height: 38px;
+                    line-height: 38px;
+                    width: 92px;
+                    position: absolute;
+                    z-index: 2;
+                    left: -92px;
+                    top: 0;
+                    background: #444851;
+                    color: #d8d8d8;
+                    text-align: center;
+                    display: block;
+//                  visibility: hidden;
+                    span{
+                        position: absolute;
+                        background: url(../img/ibar_sprites.png) no-repeat;
+                        cursor: pointer;
+                        right: -5px;
+                        top: 15px;
+                        width: 5px;
+                        height: 9px;
+                        background-position: 0 -234px;
+                        overflow: hidden;
+                    }
+                }
             }
         }
         .bottomRightSidebar{
@@ -1233,6 +1431,141 @@ margin-top: 20px;
             width: 40px;
             background: #444851;
             z-index: 1;
+            .firstBottomSidebar,.twoBottomSidebar,.threeBottomSidebar{
+                    position: relative;
+                    display: block;
+                    height: 38px;
+                    z-index: 1;
+            }
+            .firstBottomSidebar{
+                a{
+                    span{
+                        width: 18px;
+                        height: 18px;
+                        top: 11px;
+                        left: 11px;
+                        position: absolute;
+                        cursor: pointer;
+                        background: url(../img/ibar_sprites.png) no-repeat;
+                        background-position: 0 -302px;
+                        
+                    }
+                }
+                .firstBottomDiv{
+                    padding: 10px;
+                    width: 148px;
+                    height: 175px;
+                    top: -157px;
+                    background: #fff;
+                    box-shadow: 0 0 5px rgba(0,0,0,.4);
+                    border-radius: 5px 0 0 5px;
+                    z-index: 3;
+                    position: absolute;
+                    left: -168px;
+//                  display: none;
+                    img{
+                        width: 148px;
+                        height: 175px;
+                        border: 0;
+                    }
+                    span{
+                        position: absolute;
+                        right: -5px;
+                        top: 172px;
+                        width: 5px;
+                        height: 9px;
+                        cursor: pointer;
+                        background: url(../img/ibar_sprites.png) no-repeat;
+                        background-position: 0 -253px;                        
+                    }
+                }
+            }
+            .twoBottomSidebar{
+                a{
+                    span{
+                        width: 15px;
+                        height: 16px;
+                        top: 11px;
+                        left: 12px;
+                        position: absolute;
+                        cursor: pointer;
+                        background: url(../img/ibar_sprites.png) no-repeat;
+                        background-position: 0 -175px;                       
+                    }
+                }
+                .twoBottomDiv{
+                    height: 38px;
+                    line-height: 38px;
+                    width: 92px;
+                    position: absolute;
+                    z-index: 2;
+                    left: -92px;
+                    top: 0;
+                    background: #444851;
+                    color: #d8d8d8;
+                    text-align: center;
+                    display: block;
+//                  visibility: hidden;
+                    span{
+                        position: absolute;
+                        right: -5px;
+                        top: 15px;
+                        width: 5px;
+                        height: 9px;
+                        overflow: hidden;
+                        cursor: pointer;
+                        background: url(../img/ibar_sprites.png) no-repeat;
+                        background-position: 0 -234px;                        
+                    }
+                }
+            }
+            .threeBottomSidebar{
+                a{
+                    span{
+                        width: 17px;
+                        height: 14px;
+                        top: 12px;
+                        left: 12px;
+                        position: absolute;
+                        cursor: pointer;
+                        background: url(../img/ibar_sprites.png) no-repeat;
+                        background-position: 0 -201px;                       
+                    }
+                }
+                .threeBottomDiv{
+                    height: 38px;
+                    line-height: 38px;
+                    width: 92px;
+                    position: absolute;
+                    z-index: 2;
+                    left: -92px;
+                    top: 0;
+                    background: #444851;
+                    color: #d8d8d8;
+                    text-align: center;
+                    display: block;
+//                  visibility: hidden;
+                    span{
+                        position: absolute;
+                        right: -5px;
+                        top: 15px;
+                        width: 5px;
+                        height: 9px;
+                        overflow: hidden;
+                        cursor: pointer;
+                        background: url(../img/ibar_sprites.png) no-repeat;
+                        background-position: 0 -234px;                       
+                    }
+                }
+            }
+            .firstBottomSidebar:hover a,.twoBottomSidebar:hover a,.threeBottomSidebar:hover a{
+                    background: #ed145b;
+                    z-index: 10;
+            }
+             .twoBottomSidebar:hover a span{
+                    background: url(../img/ibar_sprites.png) no-repeat;
+                    background-position: -33px -175px;
+            }
         }
     }
     .twoRightSidebar{
@@ -1247,7 +1580,7 @@ margin-top: 20px;
         left: -287px;
     }
     .threeRightSidebar{
-            width: 287px;
+        width: 287px;
         height: 100%;
         position: absolute;
         top: 0;

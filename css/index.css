@@ -1079,6 +1079,19 @@ header {
     z-index: 2;
     top: 0;
     font-family: 'microsoft yahei',arial; }
+    .rightSidebar .firstRightSidebar a {
+      display: block;
+      line-height: 200px;
+      width: 40px;
+      height: 38px;
+      text-decoration: none;
+      color: #d8d8d8;
+      background-color: #444851;
+      position: relative;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      z-index: 1; }
     .rightSidebar .firstRightSidebar .topRightSidebar {
       position: absolute;
       top: 50%;
@@ -1086,21 +1099,171 @@ header {
       left: 0;
       background: #444851;
       z-index: 2; }
-      .rightSidebar .firstRightSidebar .topRightSidebar .topFirstGird, .rightSidebar .firstRightSidebar .topRightSidebar .topTwoGird, .rightSidebar .firstRightSidebar .topRightSidebar .topThreeGird, .rightSidebar .firstRightSidebar .topRightSidebar .topFourGird，.topFiveGird {
+      .rightSidebar .firstRightSidebar .topRightSidebar .topFirstGird, .rightSidebar .firstRightSidebar .topRightSidebar .topTwoGird, .rightSidebar .firstRightSidebar .topRightSidebar .topThreeGird, .rightSidebar .firstRightSidebar .topRightSidebar .topFourGird, .rightSidebar .firstRightSidebar .topRightSidebar .topFiveGird {
         position: relative;
         display: block;
         height: 38px;
         z-index: 1; }
+      .rightSidebar .firstRightSidebar .topRightSidebar .topFirstGird a span {
+        width: 18px;
+        height: 19px;
+        top: 10px;
+        left: 11px;
+        position: absolute;
+        cursor: pointer;
+        background: url(../img/ibar_sprites.png) no-repeat; }
       .rightSidebar .firstRightSidebar .topRightSidebar .topTwoGird {
         padding: 20px 0 10px;
         height: 133px;
         left: 0; }
+        .rightSidebar .firstRightSidebar .topRightSidebar .topTwoGird #TwoGirda {
+          line-height: 16px;
+          height: 133px;
+          color: #fff;
+          background: url(../img/ibar_sprites.png) no-repeat;
+          background-position: -23px -225px; }
+          .rightSidebar .firstRightSidebar .topRightSidebar .topTwoGird #TwoGirda span {
+            width: 23px;
+            height: 18px;
+            top: 11px;
+            left: 9px;
+            position: absolute;
+            cursor: pointer;
+            background: url(../img/ibar_sprites.png) no-repeat;
+            background-position: 0 -29px; }
+          .rightSidebar .firstRightSidebar .topRightSidebar .topTwoGird #TwoGirda .text1 {
+            width: 16px;
+            height: 48px;
+            margin: 38px 0 0 14px;
+            cursor: pointer; }
+          .rightSidebar .firstRightSidebar .topRightSidebar .topTwoGird #TwoGirda .text2 {
+            width: 23px;
+            height: 23px;
+            display: block;
+            border-radius: 50%;
+            background: #ed145b;
+            text-align: center;
+            line-height: 23px;
+            margin: 9px 0 0 10px;
+            cursor: pointer;
+            color: #fff; }
+      .rightSidebar .firstRightSidebar .topRightSidebar .topFirstGird:hover a, .rightSidebar .firstRightSidebar .topRightSidebar .topTwoGird:hover #TwoGirda, .rightSidebar .firstRightSidebar .topRightSidebar .topThreeGird:hover a, .rightSidebar .firstRightSidebar .topRightSidebar .topFourGird:hover a, .rightSidebar .firstRightSidebar .topRightSidebar .topFiveGird:hover a {
+        background: #ed145b;
+        z-index: 10; }
+      .rightSidebar .firstRightSidebar .topRightSidebar .topFirstGird:hover a span {
+        background: url(../img/ibar_sprites.png) no-repeat;
+        background-position: -33px 0; }
+      .rightSidebar .firstRightSidebar .topRightSidebar .topTwoGird:hover #TwoGirda span {
+        background: url(../img/ibar_sprites.png) no-repeat;
+        background-position: -33px -29px; }
+      .rightSidebar .firstRightSidebar .topRightSidebar .topThreeGird:hover a span {
+        background: url(../img/ibar_sprites.png) no-repeat;
+        background-position: -33px -57px; }
+      .rightSidebar .firstRightSidebar .topRightSidebar .topFourGird:hover a span {
+        background: url(../img/ibar_sprites.png) no-repeat;
+        background-position: -33px -85px; }
+      .rightSidebar .firstRightSidebar .topRightSidebar .topFiveGird:hover a span {
+        background: url(../img/ibar_sprites.png) no-repeat;
+        background-position: -37px -110px; }
       .rightSidebar .firstRightSidebar .topRightSidebar .topThreeGird {
         padding-bottom: 6px; }
+        .rightSidebar .firstRightSidebar .topRightSidebar .topThreeGird a span {
+          width: 18px;
+          height: 18px;
+          top: 10px;
+          background: url(../img/ibar_sprites.png) no-repeat;
+          background-position: 0 -57px;
+          left: 11px;
+          position: absolute;
+          cursor: pointer; }
+        .rightSidebar .firstRightSidebar .topRightSidebar .topThreeGird .threeDiv {
+          height: 38px;
+          line-height: 38px;
+          width: 92px;
+          position: absolute;
+          z-index: 2;
+          left: -92px;
+          top: 0;
+          background: #444851;
+          color: #d8d8d8;
+          text-align: center;
+          display: block; }
+          .rightSidebar .firstRightSidebar .topRightSidebar .topThreeGird .threeDiv span {
+            position: absolute;
+            right: -5px;
+            top: 15px;
+            width: 5px;
+            height: 9px;
+            overflow: hidden;
+            cursor: pointer;
+            background: url(../img/ibar_sprites.png) no-repeat;
+            background-position: 0 -234px; }
       .rightSidebar .firstRightSidebar .topRightSidebar .topFourGird {
         padding-bottom: 6px; }
+        .rightSidebar .firstRightSidebar .topRightSidebar .topFourGird a span {
+          width: 18px;
+          position: absolute;
+          height: 15px;
+          top: 11px;
+          left: 11px;
+          cursor: pointer;
+          background: url(../img/ibar_sprites.png) no-repeat;
+          background-position: 0 -85px; }
+        .rightSidebar .firstRightSidebar .topRightSidebar .topFourGird .fourDiv {
+          height: 38px;
+          line-height: 38px;
+          width: 92px;
+          position: absolute;
+          z-index: 2;
+          left: -92px;
+          top: 0;
+          background: #444851;
+          color: #d8d8d8;
+          text-align: center;
+          display: block; }
+          .rightSidebar .firstRightSidebar .topRightSidebar .topFourGird .fourDiv span {
+            position: absolute;
+            right: -5px;
+            top: 15px;
+            width: 5px;
+            height: 9px;
+            overflow: hidden;
+            cursor: pointer;
+            background: url(../img/ibar_sprites.png) no-repeat;
+            background-position: 0 -234px; }
       .rightSidebar .firstRightSidebar .topRightSidebar .topFiveGird {
         padding-bottom: 6px; }
+        .rightSidebar .firstRightSidebar .topRightSidebar .topFiveGird a span {
+          width: 11px;
+          height: 24px;
+          top: 8px;
+          left: 14px;
+          cursor: pointer;
+          position: absolute;
+          background: url(../img/ibar_sprites.png) no-repeat;
+          background-position: -4px -110px; }
+        .rightSidebar .firstRightSidebar .topRightSidebar .topFiveGird .fiveDiv {
+          height: 38px;
+          line-height: 38px;
+          width: 92px;
+          position: absolute;
+          z-index: 2;
+          left: -92px;
+          top: 0;
+          background: #444851;
+          color: #d8d8d8;
+          text-align: center;
+          display: block; }
+          .rightSidebar .firstRightSidebar .topRightSidebar .topFiveGird .fiveDiv span {
+            position: absolute;
+            background: url(../img/ibar_sprites.png) no-repeat;
+            cursor: pointer;
+            right: -5px;
+            top: 15px;
+            width: 5px;
+            height: 9px;
+            background-position: 0 -234px;
+            overflow: hidden; }
     .rightSidebar .firstRightSidebar .bottomRightSidebar {
       position: absolute;
       bottom: 0;
@@ -1108,6 +1271,112 @@ header {
       width: 40px;
       background: #444851;
       z-index: 1; }
+      .rightSidebar .firstRightSidebar .bottomRightSidebar .firstBottomSidebar, .rightSidebar .firstRightSidebar .bottomRightSidebar .twoBottomSidebar, .rightSidebar .firstRightSidebar .bottomRightSidebar .threeBottomSidebar {
+        position: relative;
+        display: block;
+        height: 38px;
+        z-index: 1; }
+      .rightSidebar .firstRightSidebar .bottomRightSidebar .firstBottomSidebar a span {
+        width: 18px;
+        height: 18px;
+        top: 11px;
+        left: 11px;
+        position: absolute;
+        cursor: pointer;
+        background: url(../img/ibar_sprites.png) no-repeat;
+        background-position: 0 -302px; }
+      .rightSidebar .firstRightSidebar .bottomRightSidebar .firstBottomSidebar .firstBottomDiv {
+        padding: 10px;
+        width: 148px;
+        height: 175px;
+        top: -157px;
+        background: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+        border-radius: 5px 0 0 5px;
+        z-index: 3;
+        position: absolute;
+        left: -168px; }
+        .rightSidebar .firstRightSidebar .bottomRightSidebar .firstBottomSidebar .firstBottomDiv img {
+          width: 148px;
+          height: 175px;
+          border: 0; }
+        .rightSidebar .firstRightSidebar .bottomRightSidebar .firstBottomSidebar .firstBottomDiv span {
+          position: absolute;
+          right: -5px;
+          top: 172px;
+          width: 5px;
+          height: 9px;
+          cursor: pointer;
+          background: url(../img/ibar_sprites.png) no-repeat;
+          background-position: 0 -253px; }
+      .rightSidebar .firstRightSidebar .bottomRightSidebar .twoBottomSidebar a span {
+        width: 15px;
+        height: 16px;
+        top: 11px;
+        left: 12px;
+        position: absolute;
+        cursor: pointer;
+        background: url(../img/ibar_sprites.png) no-repeat;
+        background-position: 0 -175px; }
+      .rightSidebar .firstRightSidebar .bottomRightSidebar .twoBottomSidebar .twoBottomDiv {
+        height: 38px;
+        line-height: 38px;
+        width: 92px;
+        position: absolute;
+        z-index: 2;
+        left: -92px;
+        top: 0;
+        background: #444851;
+        color: #d8d8d8;
+        text-align: center;
+        display: block; }
+        .rightSidebar .firstRightSidebar .bottomRightSidebar .twoBottomSidebar .twoBottomDiv span {
+          position: absolute;
+          right: -5px;
+          top: 15px;
+          width: 5px;
+          height: 9px;
+          overflow: hidden;
+          cursor: pointer;
+          background: url(../img/ibar_sprites.png) no-repeat;
+          background-position: 0 -234px; }
+      .rightSidebar .firstRightSidebar .bottomRightSidebar .threeBottomSidebar a span {
+        width: 17px;
+        height: 14px;
+        top: 12px;
+        left: 12px;
+        position: absolute;
+        cursor: pointer;
+        background: url(../img/ibar_sprites.png) no-repeat;
+        background-position: 0 -201px; }
+      .rightSidebar .firstRightSidebar .bottomRightSidebar .threeBottomSidebar .threeBottomDiv {
+        height: 38px;
+        line-height: 38px;
+        width: 92px;
+        position: absolute;
+        z-index: 2;
+        left: -92px;
+        top: 0;
+        background: #444851;
+        color: #d8d8d8;
+        text-align: center;
+        display: block; }
+        .rightSidebar .firstRightSidebar .bottomRightSidebar .threeBottomSidebar .threeBottomDiv span {
+          position: absolute;
+          right: -5px;
+          top: 15px;
+          width: 5px;
+          height: 9px;
+          overflow: hidden;
+          cursor: pointer;
+          background: url(../img/ibar_sprites.png) no-repeat;
+          background-position: 0 -234px; }
+      .rightSidebar .firstRightSidebar .bottomRightSidebar .firstBottomSidebar:hover a, .rightSidebar .firstRightSidebar .bottomRightSidebar .twoBottomSidebar:hover a, .rightSidebar .firstRightSidebar .bottomRightSidebar .threeBottomSidebar:hover a {
+        background: #ed145b;
+        z-index: 10; }
+      .rightSidebar .firstRightSidebar .bottomRightSidebar .twoBottomSidebar:hover a span {
+        background: url(../img/ibar_sprites.png) no-repeat;
+        background-position: -33px -175px; }
   .rightSidebar .twoRightSidebar {
     width: 267px;
     height: 185px;
