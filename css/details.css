@@ -1,0 +1,38 @@
+@charset "UTF-8";
+body, div, p, ol, ul, li, dl, dt, dd, table, tr, td, form, h1, h2, h3, h4, h5, h6, hr, img, input, fieldset {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #ed145b;
+  color: #999; }
+
+body {
+  height: 100%;
+  font-family: "微软雅黑";
+  font-size: 12px; }
+
+html {
+  height: 100%; }
+
+ul, ol, li {
+  list-style: none; }
+
+.body_content {
+  background: #f7f7f7; }
+  .body_content .body_box {
+    width: 1090px;
+    margin: 0 auto;
+    color: #999; }
+    .body_content .body_box .body_box_tit {
+      padding: 22px 0 15px;
+      overflow: hidden; }
+      .body_content .body_box .body_box_tit li {
+        float: left; }
+        .body_content .body_box .body_box_tit li span {
+          color: #ed145b; }
+      .body_content .body_box .body_box_tit .atPresent {
+        width: 460px;
+        overflow: hidden;
+        white-space: nowrap; }

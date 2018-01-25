@@ -8,7 +8,7 @@ a{
 }
 body{
     height: 100%;
-    font-family:"微软雅黑"；
+    font-family:"微软雅黑";
     
 }
 html{
@@ -21,6 +21,7 @@ ul,ol,li{
 header{
 	width:100%;
 	height:177px;
+	position: relative;
 }
 .headerInsideTop{
     height: 28px;
@@ -80,15 +81,17 @@ header{
 }
 #pushDold{
     position: relative;
+    padding-left: 10px;
 }
 #pushDolds{
+    padding-left: 10px;
     position: relative;
 }
 .pushDoll{
     position: absolute;
     display: none;
     top: 26px;
-    left: 805px;
+    left: 790px;
     background: #fff;
     box-shadow: 1px 3px 5px rgba(0,0,0,.2);
     border: 1px solid #ddd;
@@ -109,6 +112,8 @@ header{
     border-top: 0;
 }
 .pushDoll li {
+padding-left: 20px;}
+.pushDolls li {
 padding-left: 20px;}
 .right5{
     background: url(../img/spriteSheet.png) no-repeat 1px -21px;
@@ -349,12 +354,24 @@ padding-left: 20px;}
     margin-bottom: 20px;
     width: 535px;
     height: 212px;
+    position: relative;
 }
+.maskLayer21{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+
+}
+
 .rightButtonIndex a{
     display: inline-block;
     margin-right: 20px;
     margin-bottom: 20px;
     width: 535px;
+    position: relative;
     height: 212px;
 }
 .skipBottom{
@@ -379,6 +396,26 @@ margin-bottom: 20px;}
     height:340px ;
 //  overflow: hidden;
     position: relative;
+}
+.global_tip{
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    bottom: 20px;
+    font-size: 12px;
+    display: none;
+    span{
+        padding: 6px 8px;
+        border: 1px solid #fff;
+        color: #666;
+        margin-right: 8px;
+        display: inline-block;
+        height: 16px;
+        line-height: 16px;
+        background: #fff;
+        opacity: .7;
+        
+    }
 }
 .BoxFrame .picture1{
     height:340px ;
@@ -582,6 +619,7 @@ margin-top: 20px;
                             z-index: 1;
                             height: 30px;
                             overflow: hidden;
+                            display: none;
                             background: rgba(0,0,0,.6);
                             .maskLayerContent{
                                     height: 30px;
@@ -707,6 +745,7 @@ margin-top: 20px;
             height: 420px;
             background: #fff;   
             float: left; 
+            position: relative;
         }
         .BeautyRight{
             width: 780px;
@@ -721,6 +760,7 @@ margin-top: 20px;
                 float: left;
                 display: inline;
                 position: relative; 
+                position: relative;
             .BeautyLeftBox{
                 display: block;
                 position: relative;
@@ -1092,7 +1132,7 @@ margin-top: 20px;
         right: 0;
         bottom: 0;
         height: 100%;
-        display: block;
+        display: none;
         margin: auto;
         .leftIndex{
             width: 60px;
@@ -1319,13 +1359,14 @@ margin-top: 20px;
                     width: 92px;
                     position: absolute;
                     z-index: 2;
-                    left: -92px;
+                    left: -112px;
                     top: 0;
                     background: #444851;
                     color: #d8d8d8;
                     text-align: center;
                     display: block;
-//                  visibility: hidden;
+                    visibility: hidden;
+                    
                     span{
                         position: absolute;
                         right: -5px;
@@ -1361,13 +1402,13 @@ margin-top: 20px;
                     width: 92px;
                     position: absolute;
                     z-index: 2;
-                    left: -92px;
+                    left: -112px;
                     top: 0;
                     background: #444851;
                     color: #d8d8d8;
                     text-align: center;
                     display: block;
-//                  visibility: hidden;
+                    visibility: hidden;
 
                     span{
                         position: absolute;
@@ -1403,13 +1444,13 @@ margin-top: 20px;
                     width: 92px;
                     position: absolute;
                     z-index: 2;
-                    left: -92px;
+                    left: -112px;
                     top: 0;
                     background: #444851;
                     color: #d8d8d8;
                     text-align: center;
                     display: block;
-//                  visibility: hidden;
+                    visibility: hidden;
                     span{
                         position: absolute;
                         background: url(../img/ibar_sprites.png) no-repeat;
@@ -1462,7 +1503,7 @@ margin-top: 20px;
                     z-index: 3;
                     position: absolute;
                     left: -168px;
-//                  display: none;
+                    display: none;
                     img{
                         width: 148px;
                         height: 175px;
@@ -1499,13 +1540,13 @@ margin-top: 20px;
                     width: 92px;
                     position: absolute;
                     z-index: 2;
-                    left: -92px;
+                    left: -112px;
                     top: 0;
                     background: #444851;
                     color: #d8d8d8;
                     text-align: center;
                     display: block;
-//                  visibility: hidden;
+                    visibility: hidden;
                     span{
                         position: absolute;
                         right: -5px;
@@ -1538,13 +1579,13 @@ margin-top: 20px;
                     width: 92px;
                     position: absolute;
                     z-index: 2;
-                    left: -92px;
+                    left: -112px;
                     top: 0;
                     background: #444851;
                     color: #d8d8d8;
                     text-align: center;
                     display: block;
-//                  visibility: hidden;
+                    visibility: hidden;
                     span{
                         position: absolute;
                         right: -5px;
@@ -1570,6 +1611,7 @@ margin-top: 20px;
     }
     .twoRightSidebar{
         width: 267px;
+        display: none;
         height: 185px;
         padding: 10px;
         background: #fff;
@@ -1578,6 +1620,91 @@ margin-top: 20px;
         z-index: 3;
         position: absolute;
         left: -287px;
+        font-size: 12px;
+        .twoRSidebar1div{
+            height: 118px;
+            width: 267px;
+            overflow: hidden;
+            p{
+                font-size: 14px;
+                color: #333;
+                text-align: center;     
+                a{
+                    color: #ed145b;
+                    text-decoration: none;
+                }           
+            }
+            .tRSidebar1p{
+                margin: 10px auto 10px;
+                width: 62px;
+                height: 62px;
+                border-radius: 50%;
+                overflow: hidden;
+                img{
+                    border: 0;
+                }
+            }
+        }
+        .twoRSidebar2div{
+            width: 267px;
+            height: 79px;
+            border-top: 1px dotted #d5d5d5;
+            overflow: hidden;
+            padding-top: 15px;
+            clear: both;
+            .myOrder{
+                background: url(../img/ibar_sprites.png) no-repeat;
+                background-position: 0 -408px;
+                margin: 0 10px 0 35px;
+            }
+            .myOrder:hover{
+                background-position: 0 -366px;
+                border-color: #fccadb;
+            }
+            .mycollect{
+                border-color: #e9e9e9;
+                background: url(../img/ibar_sprites.png) no-repeat;
+                background-position: 0 -408px;
+                
+            }
+            .mycollect:hover{
+                background-position: 0 -366px;
+                border-color: #fccadb;
+            }
+            a{
+                width: 94px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                border: 1px solid;
+                color: #333;
+                text-decoration: none;
+                background: url(../img/ibar_sprites.png) no-repeat;
+                float: left;
+                background-position: 0 -408px;
+                background-repeat: repeat-x;
+                border-color: #e9e9e9;
+            }
+        }
+        .twoRSidebarspan{
+                position: absolute;
+                right: -5px;
+                top: 15px;
+                width: 5px;
+                height: 9px;
+                background-position: 0 -253px;
+        }
+        .twoRSidebara{
+                width: 20px;
+                height: 20px;
+                background: url(../img/ibar_sprites.png) no-repeat;
+                background-position: 5px -267px;
+                padding: 5px;
+                overflow: hidden;
+                position: absolute;
+                top: 4px;
+                right: 4px;
+        }
     }
     .threeRightSidebar{
         width: 287px;
@@ -1586,13 +1713,291 @@ margin-top: 20px;
         top: 0;
         left: 0;
         z-index: 1;
+        font-size: 12px;
         box-shadow: 0 0 5px rgba(0,0,0,.4);
         border-radius: 5px 0 0 5px;
         display: none;
         overflow: hidden;
-        
+        .RightSidebar_A{
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            overflow: hidden;
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            background: url(../img/ibar_sprites.png) no-repeat;
+            background-position: 5px -267px;
+        }
+        .RightSidebar_Span{
+                position: absolute;
+                top: 145px;
+                left: 50%;
+                color: #666;
+                z-index: 1;
+                margin-left: -66px;
+        }
+        .RightSidebar_Div{
+            width: 287px;
+            height: 100%;
+            background: #fff;
+            .TheSidebarBoxTop{
+                height: 38px;
+                line-height: 38px;
+                border-bottom: 1px solid #dedede;
+                color: #333;
+                font-size: 14px;
+                font-weight: 700;
+                width: 267px;
+                margin: 0 auto;
+                .BoxTopContent{
+                    height: 38px;
+                    line-height: 38px;
+                    border-bottom: 1px solid #dedede;
+                    color: #333;
+                    font-size: 14px;
+                    font-weight: 700;
+                    width: 267px;
+                    margin: 0 auto;
+                    .timeord{
+                        margin: 0 0 0 5px;
+                        font-size: 12px;
+                        height: 38px;
+                        line-height: 38px;
+                        border-bottom: 1px solid #dedede;
+                        color: #333;
+                        font-size: 14px;
+                        font-weight: 700;
+                        width: 267px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+            .TheSidebarBoxBottom{
+                height: 706px;
+                overflow-y: auto;
+                width: 100%;
+                margin-left: 0;
+                background: #fff;
+                position: absolute;
+                z-index: 2;
+                .BoxBottomOne{
+                    position: absolute;
+                    width: 100%;
+                    top: 0;
+                    bottom: 100px;
+                    overflow: hidden;
+                    background: url(../img/cart_empty_bg.jpg) no-repeat 50% 20px;
+                    p{
+                        display: none;
+                        margin: 75px 0 0;
+                        text-align: center;
+                        font-family: "Microsoft YaHei";
+                    }
+                }
+                .BoxBottomTwo{
+                    position: absolute;
+                    height: 100px;
+                    bottom: 0;
+                    width: 100%;
+                    background: #fff;
+                    .BoxBottomTwo1{
+                        width: 262px;
+                        margin: 8px auto;
+                        .BoxBottomTwo11{
+                            float: left;
+                            .BoxBottomList{
+                                color: #ed145b;
+                            }
+                        }
+                        .BoxBottomTwo22{
+                            float: right;
+                            font-weight: 700;
+                            font-size: 16px;
+                            font-family: "Microsoft YaHei","Microsoft JhengHei",STHeiti,MingLiu;
+                            color: #ed145b;
+                        }
+                    }
+                    .BoxBottomTwo2{
+                       display: block;
+                        height: 33px;
+                        line-height: 33px;
+                        margin: 0 auto;
+                        font-size: 19px;
+                        font-family: SimHei;
+                        color: #fff;
+                        text-align: center;
+                        text-decoration: none;
+                        background: #ed145b; 
+                        width: 262px;
+                    }
+                }
+            }
+        }
     }
     .foreRightSidebar{
-        
+        width: 183px;
+        height: 90px;
+        padding: 10px 15px 10px 5px;
+        background: #fff;
+        box-shadow: 0 0 5px rgba(0,0,0,.4);
+        border-radius: 5px 0 0 5px;
+        z-index: 3;
+        position: absolute;
+        left: -203px;
+        top: 245px;
+        display: none;
+        .foreRSidebarDiv{
+                padding-top: 13px;
+                width: 183px;
+                h3{
+                    text-align: center;
+                    color: #ed145b;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                p{
+                    text-align: center;
+                    height: 30px;
+                    line-height: 30px;
+
+                }
+                a{
+                    background: url(../img/coupon.jpg) no-repeat;
+                    float: left;
+                    margin-left: 47px;
+                    width: 90px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 14px;
+                    text-decoration: none;
+                }
+        }
+        .foreRSidebarSpan{
+            position: absolute;
+            right: -5px;
+            top: 15px;
+            width: 5px;
+            background: url(../img/ibar_sprites.png) no-repeat;
+            height: 9px;
+            background-position: 0 -253px;
+        }
+        .foreClose{
+            width: 20px;
+            background: url(../img/ibar_sprites.png) no-repeat;
+            height: 20px;
+            background-position: 5px -267px;
+            padding: 5px;
+            overflow: hidden;
+            position: absolute;
+            top: 4px;
+            right: 4px;
+        }
+    }
+}
+.dropDownBox{
+    width: 1190px;
+    position: absolute;
+    background: #fff;
+    left: 167px;
+    z-index: 18;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.2), inset 0 0 1px 0 rgba(255,255,255,1);
+    display: none;
+    a{
+        width: auto;
+        height: auto;
+        font-size: 12px;
+        border-bottom: 0;
+        text-align: inherit;
+        line-height: inherit;
+        padding: 0;
+    }
+    .dropDownBoxLeft{
+        width: 254px;
+        float: left;
+        margin: 10px;
+        a{
+            width: 254px;
+            height: 134px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            display: block;
+            font-size: 12px;
+            border-bottom: 0;
+            text-align: inherit;
+            line-height: inherit;
+            padding: 0;
+        }
+    }
+    .dropDownBoxRight{
+        float: left;
+        width: 800px;
+        margin-top: 10px;
+        dl{
+            width: 256px;
+            float: left;
+            height: 104px;
+            overflow: hidden;
+            border: dotted #e5e5e5;
+            border-width: 0 0 1px 1px;
+            margin-left: -1px;
+            padding: 10px 0 22px 7px;
+            dt{
+                background: url(../img/new_header_icon.png) no-repeat;
+                line-height: 30px;
+                height: 30px;
+                overflow: hidden;
+                padding-left: 40px;
+                margin-bottom: 12px;
+                a{
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: #333;
+                    text-decoration: none;
+                    text-align: left;
+                    background: 0;
+                    white-space: nowrap;
+                    display: inline;
+                    font-family: "\5FAE\8F6F\96C5\9ED1",arial,"\5b8b\4f53";
+                }
+            }
+            .dropDownBoxRight1{
+                background-position: 5px -170px;
+            }
+            .dropDownBoxRight2{
+                background-position: 10px 4px;   
+            }
+            .dropDownBoxRight3{
+                background-position: 10px -22px;
+            }
+            .dropDownBoxRight4{
+                background-position: 8px -113px;
+            }
+            .dropDownBoxRight5{
+                background-position: 10px -140px;
+            }
+            .dropDownBoxRight6{
+                background-position: 10px -82px;   
+            }
+            dd{
+                float: left;
+                padding: 0 12px;
+                a{
+                    color: #666;
+                    font-size: 12px;
+                    font-weight: 400;
+                    display: inline;
+                    width: auto;
+                    height: auto;
+                    line-height: 24px;
+                    text-align: left;
+                    background: 0;
+                    white-space: nowrap;
+                }
+            }
+            
+        }
     }
 }

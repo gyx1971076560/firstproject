@@ -8,7 +8,7 @@ a {
 
 body {
   height: 100%;
-  font-family: "微软雅黑"；; }
+  font-family: "微软雅黑"; }
 
 html {
   height: 100%; }
@@ -18,7 +18,8 @@ ul, ol, li {
 
 header {
   width: 100%;
-  height: 177px; }
+  height: 177px;
+  position: relative; }
 
 .headerInsideTop {
   height: 28px;
@@ -76,16 +77,18 @@ header {
   margin-top: 10px; }
 
 #pushDold {
-  position: relative; }
+  position: relative;
+  padding-left: 10px; }
 
 #pushDolds {
+  padding-left: 10px;
   position: relative; }
 
 .pushDoll {
   position: absolute;
   display: none;
   top: 26px;
-  left: 805px;
+  left: 790px;
   background: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
   border: 1px solid #ddd;
@@ -106,6 +109,9 @@ header {
   border-top: 0; }
 
 .pushDoll li {
+  padding-left: 20px; }
+
+.pushDolls li {
   padding-left: 20px; }
 
 .right5 {
@@ -343,13 +349,23 @@ header {
   margin-right: 20px;
   margin-bottom: 20px;
   width: 535px;
-  height: 212px; }
+  height: 212px;
+  position: relative; }
+
+.maskLayer21 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2); }
 
 .rightButtonIndex a {
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 20px;
   width: 535px;
+  position: relative;
   height: 212px; }
 
 .skipBottom {
@@ -373,6 +389,24 @@ header {
   display: block;
   height: 340px;
   position: relative; }
+
+.global_tip {
+  position: absolute;
+  z-index: 2;
+  left: 10px;
+  bottom: 20px;
+  font-size: 12px;
+  display: none; }
+  .global_tip span {
+    padding: 6px 8px;
+    border: 1px solid #fff;
+    color: #666;
+    margin-right: 8px;
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    background: #fff;
+    opacity: .7; }
 
 .BoxFrame .picture1 {
   height: 340px;
@@ -569,6 +603,7 @@ header {
         z-index: 1;
         height: 30px;
         overflow: hidden;
+        display: none;
         background: rgba(0, 0, 0, 0.6); }
         .shoppingContent .allShopping .firstShopping .shopMessageUp .maskLayer .maskLayerContent {
           height: 30px;
@@ -670,7 +705,8 @@ header {
       width: 258px;
       height: 420px;
       background: #fff;
-      float: left; }
+      float: left;
+      position: relative; }
     .Beauty .BeautyContent .BeautyRight {
       width: 780px;
       height: 440px;
@@ -683,6 +719,7 @@ header {
         height: 205px;
         float: left;
         display: inline;
+        position: relative;
         position: relative; }
         .Beauty .BeautyContent .BeautyRight .Beautyfirst .BeautyLeftBox {
           display: block;
@@ -995,7 +1032,7 @@ header {
     right: 0;
     bottom: 0;
     height: 100%;
-    display: block;
+    display: none;
     margin: auto; }
     .leftSidebar .allLeft .leftIndex {
       width: 60px;
@@ -1182,12 +1219,13 @@ header {
           width: 92px;
           position: absolute;
           z-index: 2;
-          left: -92px;
+          left: -112px;
           top: 0;
           background: #444851;
           color: #d8d8d8;
           text-align: center;
-          display: block; }
+          display: block;
+          visibility: hidden; }
           .rightSidebar .firstRightSidebar .topRightSidebar .topThreeGird .threeDiv span {
             position: absolute;
             right: -5px;
@@ -1215,12 +1253,13 @@ header {
           width: 92px;
           position: absolute;
           z-index: 2;
-          left: -92px;
+          left: -112px;
           top: 0;
           background: #444851;
           color: #d8d8d8;
           text-align: center;
-          display: block; }
+          display: block;
+          visibility: hidden; }
           .rightSidebar .firstRightSidebar .topRightSidebar .topFourGird .fourDiv span {
             position: absolute;
             right: -5px;
@@ -1248,12 +1287,13 @@ header {
           width: 92px;
           position: absolute;
           z-index: 2;
-          left: -92px;
+          left: -112px;
           top: 0;
           background: #444851;
           color: #d8d8d8;
           text-align: center;
-          display: block; }
+          display: block;
+          visibility: hidden; }
           .rightSidebar .firstRightSidebar .topRightSidebar .topFiveGird .fiveDiv span {
             position: absolute;
             background: url(../img/ibar_sprites.png) no-repeat;
@@ -1295,7 +1335,8 @@ header {
         border-radius: 5px 0 0 5px;
         z-index: 3;
         position: absolute;
-        left: -168px; }
+        left: -168px;
+        display: none; }
         .rightSidebar .firstRightSidebar .bottomRightSidebar .firstBottomSidebar .firstBottomDiv img {
           width: 148px;
           height: 175px;
@@ -1324,12 +1365,13 @@ header {
         width: 92px;
         position: absolute;
         z-index: 2;
-        left: -92px;
+        left: -112px;
         top: 0;
         background: #444851;
         color: #d8d8d8;
         text-align: center;
-        display: block; }
+        display: block;
+        visibility: hidden; }
         .rightSidebar .firstRightSidebar .bottomRightSidebar .twoBottomSidebar .twoBottomDiv span {
           position: absolute;
           right: -5px;
@@ -1355,12 +1397,13 @@ header {
         width: 92px;
         position: absolute;
         z-index: 2;
-        left: -92px;
+        left: -112px;
         top: 0;
         background: #444851;
         color: #d8d8d8;
         text-align: center;
-        display: block; }
+        display: block;
+        visibility: hidden; }
         .rightSidebar .firstRightSidebar .bottomRightSidebar .threeBottomSidebar .threeBottomDiv span {
           position: absolute;
           right: -5px;
@@ -1379,6 +1422,7 @@ header {
         background-position: -33px -175px; }
   .rightSidebar .twoRightSidebar {
     width: 267px;
+    display: none;
     height: 185px;
     padding: 10px;
     background: #fff;
@@ -1386,7 +1430,78 @@ header {
     border-radius: 5px 0 0 5px;
     z-index: 3;
     position: absolute;
-    left: -287px; }
+    left: -287px;
+    font-size: 12px; }
+    .rightSidebar .twoRightSidebar .twoRSidebar1div {
+      height: 118px;
+      width: 267px;
+      overflow: hidden; }
+      .rightSidebar .twoRightSidebar .twoRSidebar1div p {
+        font-size: 14px;
+        color: #333;
+        text-align: center; }
+        .rightSidebar .twoRightSidebar .twoRSidebar1div p a {
+          color: #ed145b;
+          text-decoration: none; }
+      .rightSidebar .twoRightSidebar .twoRSidebar1div .tRSidebar1p {
+        margin: 10px auto 10px;
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .rightSidebar .twoRightSidebar .twoRSidebar1div .tRSidebar1p img {
+          border: 0; }
+    .rightSidebar .twoRightSidebar .twoRSidebar2div {
+      width: 267px;
+      height: 79px;
+      border-top: 1px dotted #d5d5d5;
+      overflow: hidden;
+      padding-top: 15px;
+      clear: both; }
+      .rightSidebar .twoRightSidebar .twoRSidebar2div .myOrder {
+        background: url(../img/ibar_sprites.png) no-repeat;
+        background-position: 0 -408px;
+        margin: 0 10px 0 35px; }
+      .rightSidebar .twoRightSidebar .twoRSidebar2div .myOrder:hover {
+        background-position: 0 -366px;
+        border-color: #fccadb; }
+      .rightSidebar .twoRightSidebar .twoRSidebar2div .mycollect {
+        border-color: #e9e9e9;
+        background: url(../img/ibar_sprites.png) no-repeat;
+        background-position: 0 -408px; }
+      .rightSidebar .twoRightSidebar .twoRSidebar2div .mycollect:hover {
+        background-position: 0 -366px;
+        border-color: #fccadb; }
+      .rightSidebar .twoRightSidebar .twoRSidebar2div a {
+        width: 94px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border: 1px solid;
+        color: #333;
+        text-decoration: none;
+        background: url(../img/ibar_sprites.png) no-repeat;
+        float: left;
+        background-position: 0 -408px;
+        background-repeat: repeat-x;
+        border-color: #e9e9e9; }
+    .rightSidebar .twoRightSidebar .twoRSidebarspan {
+      position: absolute;
+      right: -5px;
+      top: 15px;
+      width: 5px;
+      height: 9px;
+      background-position: 0 -253px; }
+    .rightSidebar .twoRightSidebar .twoRSidebara {
+      width: 20px;
+      height: 20px;
+      background: url(../img/ibar_sprites.png) no-repeat;
+      background-position: 5px -267px;
+      padding: 5px;
+      overflow: hidden;
+      position: absolute;
+      top: 4px;
+      right: 4px; }
   .rightSidebar .threeRightSidebar {
     width: 287px;
     height: 100%;
@@ -1394,7 +1509,250 @@ header {
     top: 0;
     left: 0;
     z-index: 1;
+    font-size: 12px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     border-radius: 5px 0 0 5px;
     display: none;
     overflow: hidden; }
+    .rightSidebar .threeRightSidebar .RightSidebar_A {
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      overflow: hidden;
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      background: url(../img/ibar_sprites.png) no-repeat;
+      background-position: 5px -267px; }
+    .rightSidebar .threeRightSidebar .RightSidebar_Span {
+      position: absolute;
+      top: 145px;
+      left: 50%;
+      color: #666;
+      z-index: 1;
+      margin-left: -66px; }
+    .rightSidebar .threeRightSidebar .RightSidebar_Div {
+      width: 287px;
+      height: 100%;
+      background: #fff; }
+      .rightSidebar .threeRightSidebar .RightSidebar_Div .TheSidebarBoxTop {
+        height: 38px;
+        line-height: 38px;
+        border-bottom: 1px solid #dedede;
+        color: #333;
+        font-size: 14px;
+        font-weight: 700;
+        width: 267px;
+        margin: 0 auto; }
+        .rightSidebar .threeRightSidebar .RightSidebar_Div .TheSidebarBoxTop .BoxTopContent {
+          height: 38px;
+          line-height: 38px;
+          border-bottom: 1px solid #dedede;
+          color: #333;
+          font-size: 14px;
+          font-weight: 700;
+          width: 267px;
+          margin: 0 auto; }
+          .rightSidebar .threeRightSidebar .RightSidebar_Div .TheSidebarBoxTop .BoxTopContent .timeord {
+            margin: 0 0 0 5px;
+            font-size: 12px;
+            height: 38px;
+            line-height: 38px;
+            border-bottom: 1px solid #dedede;
+            color: #333;
+            font-size: 14px;
+            font-weight: 700;
+            width: 267px;
+            margin: 0 auto; }
+      .rightSidebar .threeRightSidebar .RightSidebar_Div .TheSidebarBoxBottom {
+        height: 706px;
+        overflow-y: auto;
+        width: 100%;
+        margin-left: 0;
+        background: #fff;
+        position: absolute;
+        z-index: 2; }
+        .rightSidebar .threeRightSidebar .RightSidebar_Div .TheSidebarBoxBottom .BoxBottomOne {
+          position: absolute;
+          width: 100%;
+          top: 0;
+          bottom: 100px;
+          overflow: hidden;
+          background: url(../img/cart_empty_bg.jpg) no-repeat 50% 20px; }
+          .rightSidebar .threeRightSidebar .RightSidebar_Div .TheSidebarBoxBottom .BoxBottomOne p {
+            display: none;
+            margin: 75px 0 0;
+            text-align: center;
+            font-family: "Microsoft YaHei"; }
+        .rightSidebar .threeRightSidebar .RightSidebar_Div .TheSidebarBoxBottom .BoxBottomTwo {
+          position: absolute;
+          height: 100px;
+          bottom: 0;
+          width: 100%;
+          background: #fff; }
+          .rightSidebar .threeRightSidebar .RightSidebar_Div .TheSidebarBoxBottom .BoxBottomTwo .BoxBottomTwo1 {
+            width: 262px;
+            margin: 8px auto; }
+            .rightSidebar .threeRightSidebar .RightSidebar_Div .TheSidebarBoxBottom .BoxBottomTwo .BoxBottomTwo1 .BoxBottomTwo11 {
+              float: left; }
+              .rightSidebar .threeRightSidebar .RightSidebar_Div .TheSidebarBoxBottom .BoxBottomTwo .BoxBottomTwo1 .BoxBottomTwo11 .BoxBottomList {
+                color: #ed145b; }
+            .rightSidebar .threeRightSidebar .RightSidebar_Div .TheSidebarBoxBottom .BoxBottomTwo .BoxBottomTwo1 .BoxBottomTwo22 {
+              float: right;
+              font-weight: 700;
+              font-size: 16px;
+              font-family: "Microsoft YaHei","Microsoft JhengHei",STHeiti,MingLiu;
+              color: #ed145b; }
+          .rightSidebar .threeRightSidebar .RightSidebar_Div .TheSidebarBoxBottom .BoxBottomTwo .BoxBottomTwo2 {
+            display: block;
+            height: 33px;
+            line-height: 33px;
+            margin: 0 auto;
+            font-size: 19px;
+            font-family: SimHei;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            background: #ed145b;
+            width: 262px; }
+  .rightSidebar .foreRightSidebar {
+    width: 183px;
+    height: 90px;
+    padding: 10px 15px 10px 5px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    border-radius: 5px 0 0 5px;
+    z-index: 3;
+    position: absolute;
+    left: -203px;
+    top: 245px;
+    display: none; }
+    .rightSidebar .foreRightSidebar .foreRSidebarDiv {
+      padding-top: 13px;
+      width: 183px; }
+      .rightSidebar .foreRightSidebar .foreRSidebarDiv h3 {
+        text-align: center;
+        color: #ed145b;
+        font-size: 14px;
+        font-weight: 400; }
+      .rightSidebar .foreRightSidebar .foreRSidebarDiv p {
+        text-align: center;
+        height: 30px;
+        line-height: 30px; }
+      .rightSidebar .foreRightSidebar .foreRSidebarDiv a {
+        background: url(../img/coupon.jpg) no-repeat;
+        float: left;
+        margin-left: 47px;
+        width: 90px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none; }
+    .rightSidebar .foreRightSidebar .foreRSidebarSpan {
+      position: absolute;
+      right: -5px;
+      top: 15px;
+      width: 5px;
+      background: url(../img/ibar_sprites.png) no-repeat;
+      height: 9px;
+      background-position: 0 -253px; }
+    .rightSidebar .foreRightSidebar .foreClose {
+      width: 20px;
+      background: url(../img/ibar_sprites.png) no-repeat;
+      height: 20px;
+      background-position: 5px -267px;
+      padding: 5px;
+      overflow: hidden;
+      position: absolute;
+      top: 4px;
+      right: 4px; }
+
+.dropDownBox {
+  width: 1190px;
+  position: absolute;
+  background: #fff;
+  left: 167px;
+  z-index: 18;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), inset 0 0 1px 0 white;
+  display: none; }
+  .dropDownBox a {
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    border-bottom: 0;
+    text-align: inherit;
+    line-height: inherit;
+    padding: 0; }
+  .dropDownBox .dropDownBoxLeft {
+    width: 254px;
+    float: left;
+    margin: 10px; }
+    .dropDownBox .dropDownBoxLeft a {
+      width: 254px;
+      height: 134px;
+      overflow: hidden;
+      margin-bottom: 10px;
+      display: block;
+      font-size: 12px;
+      border-bottom: 0;
+      text-align: inherit;
+      line-height: inherit;
+      padding: 0; }
+  .dropDownBox .dropDownBoxRight {
+    float: left;
+    width: 800px;
+    margin-top: 10px; }
+    .dropDownBox .dropDownBoxRight dl {
+      width: 256px;
+      float: left;
+      height: 104px;
+      overflow: hidden;
+      border: dotted #e5e5e5;
+      border-width: 0 0 1px 1px;
+      margin-left: -1px;
+      padding: 10px 0 22px 7px; }
+      .dropDownBox .dropDownBoxRight dl dt {
+        background: url(../img/new_header_icon.png) no-repeat;
+        line-height: 30px;
+        height: 30px;
+        overflow: hidden;
+        padding-left: 40px;
+        margin-bottom: 12px; }
+        .dropDownBox .dropDownBoxRight dl dt a {
+          font-size: 15px;
+          font-weight: 700;
+          color: #333;
+          text-decoration: none;
+          text-align: left;
+          background: 0;
+          white-space: nowrap;
+          display: inline;
+          font-family: "\5FAE\8F6F\96C5\9ED1",arial,"\5b8b\4f53"; }
+      .dropDownBox .dropDownBoxRight dl .dropDownBoxRight1 {
+        background-position: 5px -170px; }
+      .dropDownBox .dropDownBoxRight dl .dropDownBoxRight2 {
+        background-position: 10px 4px; }
+      .dropDownBox .dropDownBoxRight dl .dropDownBoxRight3 {
+        background-position: 10px -22px; }
+      .dropDownBox .dropDownBoxRight dl .dropDownBoxRight4 {
+        background-position: 8px -113px; }
+      .dropDownBox .dropDownBoxRight dl .dropDownBoxRight5 {
+        background-position: 10px -140px; }
+      .dropDownBox .dropDownBoxRight dl .dropDownBoxRight6 {
+        background-position: 10px -82px; }
+      .dropDownBox .dropDownBoxRight dl dd {
+        float: left;
+        padding: 0 12px; }
+        .dropDownBox .dropDownBoxRight dl dd a {
+          color: #666;
+          font-size: 12px;
+          font-weight: 400;
+          display: inline;
+          width: auto;
+          height: auto;
+          line-height: 24px;
+          text-align: left;
+          background: 0;
+          white-space: nowrap; }
