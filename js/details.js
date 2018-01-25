@@ -1,9 +1,9 @@
  $(function(){  
-   $("#box2").mouseover(function () {
+   $("#box_img").mouseover(function () {
         singleton.getIntance({
-            "$Obj": $("#box2"),
-            "bigMirrorWidth": 100,
-            "bigMirrorHeight": 100,
+            "$Obj": $("#box_img"),
+            "bigMirrorWidth": 115,
+            "bigMirrorHeight": 115,
             "multiple": 3
         });
     });
@@ -51,8 +51,8 @@
                 top:0,
                 width:this.bigMirrorWidth,
                 height:this.bigMirrorHeight,
-                "background-color":"red",
-                opacity:0.4,
+                "background-color":"blue",
+                opacity:0.1,
                 "display":"block"
             });
             this.$Obj.append(this.$bigMirror);
@@ -62,11 +62,12 @@
                 position:"absolute",
                 "background-image":this.$Obj.css("background-image"),
                 "background-size": this.$Obj.width()*this.multiple+"px "+this.$Obj.height()*this.multiple+"px",
-                left:310,
+                left:360,
                 top:0,
                 width:this.bigMirrorWidth*this.multiple,
                 height:this.bigMirrorHeight*this.multiple,
-                border:"1px solid black",
+                border:"6px solid #efefef",
+                boxShadow: "0 0 4px rgba(0,0,0,.075)",
                 overflow:"hidden",
                 "display":"block"
             });
