@@ -3,7 +3,7 @@ function goodlist(){
 		type:"get",
 		url:"getGoodsList.php",
 		success:function(date){
-			alert(date);
+//			alert(date);
 			showdate(date);
 		}
 	});

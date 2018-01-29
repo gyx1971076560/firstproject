@@ -2,8 +2,283 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<meta http-equiv="Expires" content="0">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-control" content="no-cache">
+		<meta http-equiv="Cache" content="no-cache">
+		<title>购物车</title>
+		<link rel="stylesheet" href="css/enter.css" />
+		
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/shopcart.css" />
+
+		
 	</head>
 	<body>
+	<div class="headers">
+		<div class="header_shop">
+			<div class="header_left">
+				<a href="index.html">
+					<img src="img/logo.jpg" />
+				</a>
+				<div class="header_photo">
+					400-123-8888
+					<p>大促期间客服24小时在线</p>
+				</div>
+				
+			</div>
+			<div class="header_right">
+				<div class="header_tit">
+					聚美优品欢迎你,
+					<a href="enter.html">登录&nbsp;</a>&nbsp;|&nbsp;
+					<a href="login.html">&nbsp;免费注册</a>
+				</div>
+				<div class="right_iframe">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<section class="cartMain">
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--店铺全选-->
+                    <input type="checkbox" id="shop_a" class="shopChoice">
+                    <label for="shop_a" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    店铺：<a href="javascript:;" style="font-weight: 600;">聚美优品发货</a>
+                </div>
+                <div class="shop_name1">
+                	<a href="">聚美价（元）</a>
+                    <a href="">数量</a>
+                    <a href="">小计（元）</a>
+                    <a href="" class="shop_name_last_a">操作</a>
+                </div>
+            </div>
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_2" class="son_check">
+                        <label for="checkbox_2"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="img/1329220_350_350.jpg" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">卡文克莱（CALVIN KLEIN）卡莱优淡/卡雷优香水（又名卡文克莱卡莱优淡香水）100ml</a></div>
+                    </li>
+                    <li class="list_info">
+                    
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥980</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥980</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_3" class="son_check">
+                        <label for="checkbox_3"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="img/1329220_350_350.jpg" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">卡文克莱（CALVIN KLEIN）卡莱优淡/卡雷优香水（又名卡文克莱卡莱优淡香水）100ml</a></div>
+                    </li>
+                    <li class="list_info">
+                    
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥780</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥780</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_6" class="son_check">
+                        <label for="checkbox_6"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="img/1329220_350_350.jpg" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">卡文克莱（CALVIN KLEIN）卡莱优淡/卡雷优香水（又名卡文克莱卡莱优淡香水）100ml</a></div>
+                    </li>
+                    <li class="list_info">
+                    
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥180</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥180</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        
+
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--店铺全选-->
+                    <input type="checkbox" id="shop_c" class="shopChoice">
+                    <label for="shop_c" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    店铺：<a href="javascript:;" style="font-weight: 600;">名品特卖</a>
+                </div>
+                <div class="shop_name1">
+                	<a href="">聚美价（元）</a>
+                    <a href="">数量</a>
+                    <a href="">小计（元）</a>
+                    <a href="" class="shop_name_last_a">操作</a>
+                </div>
+            </div>
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_8" class="son_check">
+                        <label for="checkbox_8"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="img/1329220_350_350.jpg" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">卡文克莱（CALVIN KLEIN）卡莱优淡/卡雷优香水（又名卡文克莱卡莱优淡香水）100ml</a></div>
+                    </li>
+                    <li class="list_info">
+                    
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥1980</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥1980</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_9" class="son_check">
+                        <label for="checkbox_9"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="img/1329220_350_350.jpg" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">卡文克莱（CALVIN KLEIN）卡莱优淡/卡雷优香水（又名卡文克莱卡莱优淡香水）100ml</a></div>
+                    </li>
+                    <li class="list_info">
+                    
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥480</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥480</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--底部-->
+        <div class="bar-wrapper">
+        	<div class="cartMain_hd">
+	            <ul class="order_lists cartTop">
+	                <li class="list_chk">
+	                    <!--所有商品全选-->
+	                    <input type="checkbox" id="all" class="whole_check">
+	                    <label for="all"></label>
+	                    	全选	
+	                </li>
+	                <a>继续购物</a>
+	                &nbsp;|&nbsp;
+	                <a>清空选中商品</a>
+	            </ul>
+	        </div>
+            <div class="bar-right">
+                <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                <div class="calBtn"><a href="javascript:;">结算</a></div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+			<div class="footerBox">
+				<p class="footerBox_top">
+            		Copyright © 2010-2015 北京创锐文化传媒有限公司 Jumei.com 保留一切权利。客服热线：400-123-8888
+            		<br />
+    				 京公网安备 11010102001226 号 | 
+    				<a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow">京ICP证111033号</a>
+    				 | 食品流通许可证 SP1101051110165515（1-1）
+            		 | <a href="http://p2.jmstatic.com/activity/2013_chuangrui.jpeg" target="_blank" rel="nofollow">营业执照</a>
+				</p>
+				<p class="footerBox_bottom">
+		            <a href="javascript:void(0)" class="footer_copy_logo logo01" rel="nofollow"></a>
+		            <a href="https://www.itrust.org.cn/yz/pjwx.asp?wm=1693268180" target="_blank" class="footer_copy_logo logo02" rel="nofollow"></a>
+		            <a href="javascript:void(0)" class="footer_copy_logo logo03" rel="nofollow"></a>
+		            <a href="javascript:void(0)" class="footer_copy_logo logo04" rel="nofollow"></a>
+		            <a href="https://ss.cnnic.cn/verifyseal.dll?sn=e12070911010031011307708&amp;ct=df&amp;pa=453163" target="_blank" class="footer_copy_logo logo05" rel="nofollow"></a>
+				</p>
+			</div>
+		</div>
+    <!--遮罩层-->
+    <section class="model_bg"></section>
+    <!--删除提示-->
+    <section class="my_model">
+        <p class="title">删除宝贝<span class="closeModel">X</span></p>
+        <p>您确认要删除该宝贝吗？</p>
+        <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
+    </section>
 	</body>
 </html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="./js/carts.js"></script>
